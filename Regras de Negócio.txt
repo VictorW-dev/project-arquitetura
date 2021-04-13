@@ -26,4 +26,4 @@ devem ser obrigatoriamente da família do titular;
 9 - Caso o veículo alugado esteja danificado na entrega, deverá pagar uma multa de R$ 3.500,00 + valor
 para conserto do mesmo;
 
-10 - Clientes não cadastrados têm um aumento de 10% no valor da compra ou do aluguel.
+10 - Clientes que pagarão no crédito têm um aumento de 10% no valor da compra ou do aluguel e os que vão pagar no débito têm 5% de desconto.
