@@ -1,0 +1,29 @@
+REGRAS DE NEGÓCIO
+
+1 - Ao cadastrar um carro as seguintes informações são preenchidas: nome do carro, categoria,
+marca, ano, se é para compra ou aluguel, e tem preço de venda, preço de aluguel;
+
+2 - A concessionária tanto vende seus carros como também os aluga para clientes cadastrados;
+
+3 - Os clientes podem alugar carros, cuja duração não poderá ultrapassar o período de duas
+semanas. Depois desse tempo, o cliente pode renovar o aluguel;
+
+4 - Os clientes que desejam alugar um carro que já esteja alugado poderão fazer uma reserva do
+mesmo;
+
+5 - Os clientes podem ser pessoas físicas ou jurídicas. Os carros também são vendidos ou alugados para
+empresas;
+
+6 - O cliente pessoa física ao se cadastrar, deve informar os seguintes dados: nome completo, CPF,
+data de nascimento e telefone; O cliente titular poderá cadastrar um
+número ilimitado de clientes dependentes para aluguel de carros e todos os dependentes
+devem ser obrigatoriamente da família do titular;
+
+7 - O cliente pessoa jurídica ao se cadastrar deve informar: CNPJ, razão social e telefone;
+
+8 - Em toda renovação deverá pagar uma taxa para cada carro;
+
+9 - Caso o veículo alugado esteja danificado na entrega, deverá pagar uma multa de R$ 3.500,00 + valor
+para conserto do mesmo;
+
+10 - Clientes não cadastrados têm um aumento de 10% no valor da compra ou do aluguel.
