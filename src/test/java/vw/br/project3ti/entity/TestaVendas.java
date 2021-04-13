@@ -35,6 +35,28 @@ public class TestaVendas {
 		System.out.println("Valor total da compra: " + venda.calculaValorTotal());
 	}
 	
+	@Test
+	public void testaInsercaoDeProdutosIguaisNaVenda() {
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+
+		assertEquals(1, venda.listaItens().size());
+
+	}
+	
+	@Test
+	public void testaQuantidadeDeItens() {
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+
+		assertEquals(5, venda.listaItens().get(0).getQuantidade());
+	}
+	
 	
 
 }
