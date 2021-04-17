@@ -9,7 +9,7 @@ public class TestaCarro {
 	@Test
 	public void testaCarroTemNomeMarcaPrecos() { 
 		
-		Carro carro = new Carro("Duster", "Renault", 2021, 95000.00, 3500.00, new Categoria("SUV"), "Compra");
+		Carro carro = new Carro("Duster", "Renault", 2021, 95000.00, 3500.00, new Categoria("SUV"), Opcao.COMPRA);
 		
 		assertEquals("Duster", carro.getNome());
 		assertEquals("Renault", carro.getMarca());

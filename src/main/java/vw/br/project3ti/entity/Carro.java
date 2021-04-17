@@ -8,10 +8,10 @@ public class Carro {
 	private double precoVenda;
 	private double precoAluguel;
 	private Categoria categoria;
-	private String compraOuAluguel;
+	private Opcao opcao;
 	
 	public Carro(String nome, String marca, int ano, double precoVenda, double precoAluguel, Categoria categoria,
-			String compraOuAluguel) {
+			Opcao opcao) {
 		super();
 		this.nome = nome;
 		this.marca = marca;
@@ -19,7 +19,7 @@ public class Carro {
 		this.precoVenda = precoVenda;
 		this.precoAluguel = precoAluguel;
 		this.categoria = categoria;
-		this.compraOuAluguel = compraOuAluguel;
+		this.opcao = opcao;
 	}
 	
 	public String getNome() {
@@ -58,11 +58,11 @@ public class Carro {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	public String getCompraOuAluguel() {
-		return compraOuAluguel;
+	public Opcao getCompraOuAluguel() {
+		return opcao;
 	}
-	public void setCompraOuAluguel(String compraOuAluguel) {
-		this.compraOuAluguel = compraOuAluguel;
+	public void setCompraOuAluguel(Opcao opcao) {
+		this.opcao = opcao;
 	}
 
 	@Override
@@ -71,7 +71,7 @@ public class Carro {
 		int result = 1;
 		result = prime * result + ano;
 		result = prime * result + ((categoria == null) ? 0 : categoria.hashCode());
-		result = prime * result + ((compraOuAluguel == null) ? 0 : compraOuAluguel.hashCode());
+		result = prime * result + ((opcao == null) ? 0 : opcao.hashCode());
 		result = prime * result + ((marca == null) ? 0 : marca.hashCode());
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		long temp;
@@ -98,10 +98,10 @@ public class Carro {
 				return false;
 		} else if (!categoria.equals(other.categoria))
 			return false;
-		if (compraOuAluguel == null) {
-			if (other.compraOuAluguel != null)
+		if (opcao == null) {
+			if (other.opcao != null)
 				return false;
-		} else if (!compraOuAluguel.equals(other.compraOuAluguel))
+		} else if (!opcao.equals(other.opcao))
 			return false;
 		if (marca == null) {
 			if (other.marca != null)
