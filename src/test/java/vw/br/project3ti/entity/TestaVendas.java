@@ -67,5 +67,24 @@ public class TestaVendas {
 		assertEquals(false, venda.tem(item2));
 
 	}
+	
+	@Test
+	public void testaResumoCompra() {
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		venda.addItem(item);
+		
+		assertEquals(6, venda.listaItens().get(0).getQuantidade());
+	}
+	
+	@Test
+	public void TesatValorParaBoleto() {
+		venda.addItem(item);
+		venda.setFormaPagmento(FormaPagamento.BOLETO);
+		assertEquals(186200.00, vendaService.pegaValorComReajuste());
+		System.out.println("Valor no boleto: " + venda.calculaValorTotal());
+	}
 
 }

@@ -19,6 +19,8 @@ public class VendaService {
 		case DEBITO:
 			valorTotal -= venda.calculaValorTotal() * 0.05;
 			break;
+		case BOLETO:
+			valorTotal -= venda.calculaValorTotal() * 0.02;
 		default:
 			break;
 		}
